@@ -16,6 +16,7 @@
 .features{
     display: flex;
     justify-content: space-around;
+    padding-left: 200px;
 }
 /* Style headings */
 .main h1, h2, h3 {
@@ -58,4 +59,16 @@ article {
     margin-top: 20px;
     border-top: 1px solid #ccc;
     padding-top: 20px;
+}
+.content h2{
+    padding-left: 200px;
+}
+section{
+    padding-top: 50px;
+}
+section h2{
+    padding-left: 400px;
+}
+.main h1{
+    padding-left: 300px;
 }
