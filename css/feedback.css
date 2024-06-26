@@ -34,7 +34,7 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 15px;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 .emoji {
