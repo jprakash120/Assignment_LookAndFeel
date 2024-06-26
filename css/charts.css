@@ -1,0 +1,16 @@
+.chart-container {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    align-items: center;
+    margin-top: 20px; /* Optional: Adjust spacing */
+}
+
+.chart-container canvas {
+    max-width: 400px; /* Set a maximum width */
+    max-height: 400px; /* Set a maximum height */
+    width: 100%; /* Ensure it takes full width of its container */
+    height: auto; /* Maintain aspect ratio */
+}
+.chart1, .chart2{
+    display: flex;
+}
