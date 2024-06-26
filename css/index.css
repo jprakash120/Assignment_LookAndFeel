@@ -1,0 +1,39 @@
+
+.header1{
+    display: flex;
+    margin: 0 auto;
+    width: 1300px;  
+    position: relative;
+    color: white;
+ 
+}
+
+.logo{
+   flex-basis:600px;
+   padding: 10px;
+   color: white;
+}
+.navlist{
+  padding-top: 30px;
+  padding-left: 5px;
+}
+.navlist a{
+    padding-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+.navlist a:hover {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-underline-offset: -0.99em;
+    height: 4px;
+    font-weight: bold;
+    color: white;
+}
+
+body{
+    background-color: burlywood;
+}
+.main{
+    margin: 50px;
+}
