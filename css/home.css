@@ -1,0 +1,61 @@
+/* Reset default margin and padding */
+.main h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style main container */
+.main {
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #f0f0f0;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.features{
+    display: flex;
+    justify-content: space-around;
+}
+/* Style headings */
+.main h1, h2, h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Style paragraphs */
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Style lists */
+ul, ol {
+    margin-bottom: 10px;
+}
+
+/* Style links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Style blockquotes */
+blockquote {
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #e9ecef;
+    border-left: 4px solid #007bff;
+    color: #555;
+}
+
+/* Style case study article */
+article {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
