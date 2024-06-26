@@ -1,0 +1,75 @@
+<html>
+<head>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/feedback.css">
+    <script src="./js/feedback.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header1">
+            <div class="logo">
+                <h1>NextGen Sales</h1>
+            </div>
+            <div class="navlist">
+                <a href="./index.html"><i class="fas fa-home"></i>HOME</a>
+                <a href="./pricing.html"><i class="fas fa-dollar-sign"></i>PRICING</a>
+                <a href="./contact.html"><i class="fas fa-envelope"></i>CONTACT</a>
+                <a href="./feedback.html"><i class="fas fa-comment-dots"></i>FEEDBACK</a>
+                <a href="./charts.html"><i class="fas fa-chart-bar"></i> CHARTS</a>
+                <a href="./about.html"><i class="fas fa-info-circle"></i>ABOUT</a>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Rate our service?</h1>
+            <form id="feedbackForm">
+                <div class="input-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="emoji-container">
+                    <span class="emoji" data-feedback="Terrible">😡</span>
+                    <span class="emoji" data-feedback="Bad">😞</span>
+                    <span class="emoji" data-feedback="Okay">😐</span>
+                    <span class="emoji" data-feedback="Good">😊</span>
+                    <span class="emoji" data-feedback="Excellent">😍</span>
+                </div>
+                <input type="hidden" id="emojiRating" name="emojiRating" required><br>
+                <div class="input-group">
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" required></textarea>
+                </div>
+                <button type="submit">Submit Feedback</button>
+            </form>
+            <div class="feedback-response" id="feedbackResponse"></div>
+            <div class="feedback-list" id="feedbackList"></div>
+        </div>
+    </div>
+
+    <!-- Edit Feedback Popup Form -->
+    <div class="popup-form" id="popupForm">
+        <form id="editFeedbackForm">
+            <div class="input-group">
+                <label for="editName">Name:</label>
+                <input type="text" id="editName" name="editName" required>
+            </div>
+            <div class="input-group">
+                <label for="editEmail">Email:</label>
+                <input type="email" id="editEmail" name="editEmail" required>
+            </div>
+            <div class="input-group">
+                <label for="editComments">Comments:</label>
+                <textarea id="editComments" name="editComments" required></textarea>
+            </div>
+            <input type="hidden" id="editEmojiRating" name="editEmojiRating" required>
+            <button type="button" id="modifyButton">Modify</button>
+            <button type="button" id="cancelButton">Cancel</button>
+        </form>
+    </div>
+</body>
+</html>
