@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Sales Charts</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <style>
+        .chart-container {
+            display: flex;
+            justify-content: space-around; /* Adjust as needed */
+            align-items: center;
+            margin-top: 20px; /* Optional: Adjust spacing */
+        }
+
+        .chart-container canvas {
+            max-width: 500px; /* Set a maximum width */
+            max-height: 500px; /* Set a maximum height */
+            width: 100%; /* Ensure it takes full width of its container */
+            height: 100%; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header1">
+            <div class="logo">
+                <h1>CodeHub</h1>
+            </div>
+            <div class="navlist">
+                <a href="./index.html"><i class="fas fa-home"></i>HOME</a>
+                <a href="./pricing.html"><i class="fas fa-dollar-sign"></i>PRICING</a>
+                <a href="./contact.html"><i class="fas fa-envelope"></i>CONTACT</a>
+                <a href="./feedback.html"><i class="fas fa-comment-dots"></i>FEEDBACK</a>
+                <a href="./charts.html"><i class="fas fa-chart-bar"></i> CHARTS</a>
+                <a href="./about.html"><i class="fas fa-info-circle"></i>ABOUT</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="chart-container">
+        <div class1="chart1">
+        <h3>Chart based on sales per month</h3>
+        <canvas id="salesChart"></canvas>
+        </div>
+        <div class1="chart2">
+        <h3>Chart based on user reviews</h3>
+        <canvas id="salesPieChart"></canvas>
+        </div>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('salesChart').getContext('2d');
+        const salesChart = new Chart(ctx, {
+            type: 'bar', // Specify the chart type
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+                datasets: [{
+                    label: 'Software Sales',
+                    data: [120, 150, 180, 200, 170, 190],
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        const ctxPie = document.getElementById('salesPieChart').getContext('2d');
+        const salesPieChart = new Chart(ctxPie, {
+            type: 'pie', 
+            data: {
+                labels: ['Terrible', 'Sad', 'Neutral', 'Good', 'Happy'],
+                datasets: [{
+                    label: 'Sales Distribution',
+                    data: [30, 50, 20, 40,20],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(75, 162, 86, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(75, 162, 86, 0.2)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(tooltipItem) {
+                                return tooltipItem.label + ': ' + tooltipItem.raw + '%';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
