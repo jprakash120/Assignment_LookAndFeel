@@ -1,0 +1,62 @@
+Batch,Year,Quarter,Month,Day,Description,Sum of Downtime_Minutes,Product,Operator,Shift,Operator Error
+422111,2024,Qtr 3,August,29,Batch change,60,OR-600,Operator D,Shift A,Yes
+422111,2024,Qtr 3,August,29,Machine failure,15,OR-600,Operator D,Shift A,No
+422112,2024,Qtr 3,August,29,Batch change,20,LE-600,Operator D,Shift B,Yes
+422112,2024,Qtr 3,August,29,Batch coding error,20,LE-600,Operator D,Shift B,Yes
+422113,2024,Qtr 3,August,29,Batch change,50,LE-600,Operator D,Shift B,Yes
+422114,2024,Qtr 3,August,29,Inventory shortage,25,LE-600,Operator D,Shift B,No
+422114,2024,Qtr 3,August,29,Machine adjustment,15,LE-600,Operator D,Shift B,Yes
+422115,2024,Qtr 3,August,29,Calibration error,24,LE-600,Operator A,Shift B,Yes
+422117,2024,Qtr 3,August,29,Batch change,10,LE-600,Operator A,Shift B,Yes
+422117,2024,Qtr 3,August,29,Machine adjustment,5,LE-600,Operator A,Shift B,Yes
+422118,2024,Qtr 3,August,30,Label switch,10,CO-600,Operator B,Shift C,Yes
+422118,2024,Qtr 3,August,30,Machine adjustment,14,CO-600,Operator B,Shift C,Yes
+422118,2024,Qtr 3,August,30,Machine failure,16,CO-600,Operator B,Shift C,No
+422118,2024,Qtr 3,August,30,Other,20,CO-600,Operator B,Shift C,No
+422119,2024,Qtr 3,August,30,Inventory shortage,25,CO-600,Operator B,Shift A,No
+422120,2024,Qtr 3,August,30,Conveyor belt jam,17,CO-600,Operator B,Shift A,No
+422120,2024,Qtr 3,August,30,Inventory shortage,20,CO-600,Operator B,Shift A,No
+422120,2024,Qtr 3,August,30,Product spill,15,CO-600,Operator B,Shift A,Yes
+422121,2024,Qtr 3,August,30,Machine failure,15,CO-600,Operator C,Shift A,No
+422122,2024,Qtr 3,August,30,Machine failure,25,CO-600,Operator C,Shift A,No
+422123,2024,Qtr 3,August,30,Inventory shortage,43,CO-600,Operator C,Shift A,No
+422123,2024,Qtr 3,August,30,Machine failure,30,CO-600,Operator C,Shift A,No
+422124,2024,Qtr 3,August,30,Machine adjustment,20,CO-600,Operator C,Shift B,Yes
+422124,2024,Qtr 3,August,30,Product spill,20,CO-600,Operator C,Shift B,Yes
+422125,2024,Qtr 3,August,30,Label switch,10,CO-600,Operator A,Shift B,Yes
+422125,2024,Qtr 3,August,30,Other,10,CO-600,Operator A,Shift B,No
+422126,2024,Qtr 3,August,30,Batch coding error,44,CO-600,Operator A,Shift B,Yes
+422127,2024,Qtr 3,August,30,Machine adjustment,23,CO-600,Operator A,Shift B,Yes
+422128,2024,Qtr 3,August,30,Machine failure,30,CO-600,Operator A,Shift B,No
+422128,2024,Qtr 3,August,30,Product spill,22,CO-600,Operator A,Shift B,Yes
+422129,2024,Qtr 3,August,30,Other,15,CO-600,Operator A,Shift C,No
+422130,2024,Qtr 3,August,31,Batch change,20,CO-600,Operator B,Shift A,Yes
+422131,2024,Qtr 3,August,31,Calibration error,10,CO-600,Operator B,Shift A,Yes
+422131,2024,Qtr 3,August,31,Inventory shortage,20,CO-600,Operator B,Shift A,No
+422133,2024,Qtr 3,August,31,Machine failure,20,DC-600,Operator B,Shift A,No
+422134,2024,Qtr 3,August,31,Batch coding error,20,DC-600,Operator D,Shift A,Yes
+422134,2024,Qtr 3,August,31,Machine failure,30,DC-600,Operator D,Shift A,No
+422135,2024,Qtr 3,August,31,Inventory shortage,30,DC-600,Operator D,Shift B,No
+422135,2024,Qtr 3,August,31,Other,15,DC-600,Operator D,Shift B,No
+422137,2024,Qtr 3,September,2,Batch coding error,30,RB-600,Operator B,Shift C,Yes
+422137,2024,Qtr 3,September,2,Calibration error,15,RB-600,Operator B,Shift C,Yes
+422138,2024,Qtr 3,September,2,Labeling error,20,RB-600,Operator B,Shift C,No
+422139,2024,Qtr 3,September,2,Inventory shortage,20,RB-600,Operator B,Shift C,No
+422139,2024,Qtr 3,September,2,Machine adjustment,15,RB-600,Operator B,Shift C,Yes
+422140,2024,Qtr 3,September,2,Label switch,13,RB-600,Operator B,Shift C,Yes
+422140,2024,Qtr 3,September,2,Machine adjustment,50,RB-600,Operator B,Shift C,Yes
+422141,2024,Qtr 3,September,2,Other,7,RB-600,Operator C,Shift A,No
+422142,2024,Qtr 3,September,2,Machine adjustment,30,RB-600,Operator C,Shift A,Yes
+422143,2024,Qtr 3,September,2,Machine adjustment,40,RB-600,Operator C,Shift A,Yes
+422143,2024,Qtr 3,September,2,Machine failure,18,RB-600,Operator C,Shift A,No
+422144,2024,Qtr 3,September,2,Batch coding error,24,CO-2L,Operator C,Shift A,Yes
+422144,2024,Qtr 3,September,2,Machine adjustment,30,CO-2L,Operator C,Shift A,Yes
+422145,2024,Qtr 3,September,2,Labeling error,22,CO-2L,Operator A,Shift B,No
+422146,2024,Qtr 3,September,2,Machine adjustment,30,CO-2L,Operator A,Shift B,Yes
+422146,2024,Qtr 3,September,2,Machine failure,25,CO-2L,Operator A,Shift B,No
+422146,2024,Qtr 3,September,2,Other,7,CO-2L,Operator A,Shift B,No
+422147,2024,Qtr 3,September,2,Inventory shortage,17,CO-2L,Operator A,Shift B,No
+422147,2024,Qtr 3,September,2,Machine adjustment,60,CO-2L,Operator A,Shift B,Yes
+422147,2024,Qtr 3,September,2,Machine failure,30,CO-2L,Operator A,Shift B,No
+422148,2024,Qtr 3,September,3,Batch coding error,7,CO-2L,Operator D,Shift C,Yes
+422148,2024,Qtr 3,September,3,Inventory shortage,25,CO-2L,Operator D,Shift C,No
