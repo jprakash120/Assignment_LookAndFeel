@@ -1,185 +1,207 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Jayaprakash Makkena builds reliable data products, analytics systems, and AI-assisted workflows.">
-  <meta name="theme-color" content="#07111f">
+  <meta name="theme-color" content="#070b12">
+  <meta property="og:title" content="Jayaprakash Makkena | Data & AI Portfolio">
+  <meta property="og:description" content="Data systems, decision intelligence, and applied AI—built with evidence.">
   <title>Jayaprakash Makkena | Data & AI Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/portfolio.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" defer></script>
   <script src="js/portfolio.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="Jayaprakash Makkena home">
-      <span class="brand-mark">JM</span>
-      <span>Jayaprakash Makkena</span>
-    </a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-      <span></span><span></span><span></span>
-      <span class="sr-only">Toggle navigation</span>
-    </button>
-    <nav id="site-nav" aria-label="Primary navigation">
-      <a href="#work">Work</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a class="nav-cta" href="https://www.linkedin.com/in/jayaprakash-makkena-3160a3174" target="_blank" rel="noreferrer">Connect</a>
-    </nav>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="grid-field" aria-hidden="true"></div>
+  <div class="pointer-glow" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Jayaprakash Makkena home">
+        <span class="brand-glyph">JM</span>
+        <span class="brand-copy"><strong>jayaprakash</strong><small>/ data.os</small></span>
+      </a>
+      <nav id="site-nav" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#stack">Stack</a>
+        <a href="#contact">Connect</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path></svg>
+        </button>
+        <button class="command-button" type="button" data-command-open aria-haspopup="dialog">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+          <span>Jump to</span><kbd>⌘K</kbd>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span><span></span><span class="sr-only">Toggle navigation</span>
+        </button>
+      </div>
+    </div>
   </header>
 
   <main id="main">
-    <section class="hero" id="top">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span> Data scientist · Data engineer · BI builder</p>
-        <h1>I turn operational data into <span>decisions people can act on.</span></h1>
-        <p class="hero-lede">I build reliable pipelines, decision-focused dashboards, and AI-assisted tools across manufacturing, healthcare, and enterprise analytics.</p>
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <div class="availability"><span></span> Open to data & AI opportunities</div>
+        <p class="mono-label">DATA SCIENTIST · DATA ENGINEER · AI BUILDER</p>
+        <h1>Data systems that feel <em>one step ahead.</em></h1>
+        <p class="hero-lede">I turn operational complexity into reliable pipelines, decision-grade analytics, and AI-assisted products people can trust.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#work">Explore selected work</a>
-          <a class="button secondary" href="https://github.com/jprakash120" target="_blank" rel="noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
+          <a class="button button-primary" href="#projects">Explore the work <span aria-hidden="true">→</span></a>
+          <a class="button button-ghost" href="https://github.com/jprakash120" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.21-3.37-1.21-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .08 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.37 9.37 0 0 1 12 6.71a9.3 9.3 0 0 1 2.5.34c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.95.68 1.92 0 1.39-.01 2.51-.01 2.85 0 .27.18.59.69.49A10.24 10.24 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z"></path></svg>
+            GitHub profile
+          </a>
         </div>
-        <ul class="proof-list" aria-label="Portfolio highlights">
-          <li><strong>45</strong><span>AURIX regression tests</span></li>
-          <li><strong>2 TB+</strong><span>Data pipeline experience</span></li>
-          <li><strong>End to end</strong><span>Data → insight → action</span></li>
-        </ul>
+        <div class="hero-proof" aria-label="Portfolio highlights">
+          <div><strong>45</strong><span>AURIX regression tests</span></div>
+          <div><strong>2 TB+</strong><span>Enterprise data experience</span></div>
+          <div><strong>4</strong><span>Public repositories</span></div>
+        </div>
       </div>
-      <aside class="hero-panel" aria-label="Current focus">
-        <div class="panel-kicker">CURRENT FOCUS</div>
-        <h2>Production analytics that explain the “why.”</h2>
-        <p>Combining governed data models, operational dashboards, natural-language analytics, and measurable quality checks.</p>
-        <div class="signal-grid">
-          <div><span>01</span><strong>Data systems</strong><small>Python · SQL · Azure · SAP</small></div>
-          <div><span>02</span><strong>Decision layers</strong><small>Power BI · DAX · KPI design</small></div>
-          <div><span>03</span><strong>Applied AI</strong><small>RAG · evaluation · agents</small></div>
+
+      <aside class="terminal-card reveal" aria-label="Portfolio system profile">
+        <div class="terminal-bar">
+          <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+          <span>portfolio profile — zsh</span>
+          <button class="copy-button" type="button" data-copy="https://github.com/jprakash120" aria-label="Copy GitHub profile URL">copy</button>
         </div>
+        <div class="terminal-body" aria-live="polite">
+          <p><span class="prompt">❯</span> whoami</p>
+          <p class="terminal-output">Data scientist building systems from source to decision.</p>
+          <p><span class="prompt">❯</span> cat current_focus.json</p>
+          <pre><code>{
+  <span class="json-key">"focus"</span>: [
+    <span class="json-string">"decision intelligence"</span>,
+    <span class="json-string">"AI evaluation"</span>,
+    <span class="json-string">"data products"</span>
+  ],
+  <span class="json-key">"mode"</span>: <span class="json-string">"shipping"</span>,
+  <span class="json-key">"location"</span>: <span class="json-string">"Florida"</span>
+}</code></pre>
+          <p><span class="prompt">❯</span> system_status <span class="terminal-cursor" aria-hidden="true"></span></p>
+          <div class="system-status"><span></span> all portfolio checks passing</div>
+        </div>
+        <div class="terminal-footer"><span>Python</span><span>SQL</span><span>Power BI</span><span>Applied AI</span></div>
       </aside>
     </section>
 
-    <section class="section" id="work">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">SELECTED WORK</p>
-          <h2>Systems with evidence behind them</h2>
-        </div>
-        <p>Each project is framed around the business question, the technical system, and the measured result—not a list of tools.</p>
+    <section class="signal-strip" aria-label="Technology experience">
+      <div class="signal-track"><span>PYTHON</span><i></i><span>SQL</span><i></i><span>POWER BI</span><i></i><span>AZURE</span><i></i><span>SNOWFLAKE</span><i></i><span>RAG</span><i></i><span>AGENT EVALUATION</span><i></i><span>DATA QUALITY</span></div>
+    </section>
+
+    <section class="section-shell section-block" id="projects">
+      <div class="section-heading reveal">
+        <div><p class="mono-label">01 / SELECTED SYSTEMS</p><h2>Featured builds</h2></div>
+        <p>Not tutorial clones—systems shaped around a real constraint, an explicit architecture, and evidence that the result works.</p>
       </div>
 
-      <article class="featured-project">
-        <div class="project-story">
-          <div class="project-meta"><span>FEATURED CASE STUDY</span><span>Manufacturing analytics</span></div>
-          <h3>Manufacturing Downtime Explanation Copilot</h3>
-          <p>A reproducible analytics product that reshapes production logs into a governed downtime model, visualizes the largest loss drivers, and answers natural-language questions without inventing results.</p>
-          <div class="metric-row">
-            <div><strong>1,388</strong><span>downtime minutes analyzed</span></div>
-            <div><strong>61</strong><span>validated events</span></div>
-            <div><strong>35</strong><span>affected batches</span></div>
+      <div class="bento-grid">
+        <article class="bento-card aurix-card reveal">
+          <div class="card-topline"><span class="repo-visibility">Public</span><span class="card-index">01</span></div>
+          <div class="aurix-mark" aria-hidden="true"><span>A</span><i></i><i></i><i></i></div>
+          <div class="card-content">
+            <p class="mono-label">AI BEHAVIOR SYSTEM</p><h3>AURIX</h3>
+            <p>A Windows voice assistant engineered as a behavior lab: local-first routing, written specifications, regression tests, model judging, and honest failure analysis.</p>
+            <div class="repo-stats"><span><i class="language-dot python"></i>Python</span><span>45 tests</span><span>Spec-driven</span></div>
+            <a class="card-link" href="https://github.com/jprakash120/aurix" target="_blank" rel="noreferrer">Open repository <span>↗</span></a>
           </div>
-          <ul class="check-list">
-            <li>Corrected a KPI inconsistency by recomputing every metric from source rows.</li>
-            <li>Anonymized operator data and added data-quality validation for public use.</li>
-            <li>Separated analytics logic from the Streamlit interface for testability.</li>
-          </ul>
-          <a class="text-link" href="projects/manufacturing-downtime-copilot/README.md">Open case study and code <span aria-hidden="true">→</span></a>
-        </div>
-        <div class="data-card">
+        </article>
+
+        <article class="bento-card data-card reveal">
           <div class="data-card-header">
-            <div>
-              <span>Verified source metrics</span>
-              <h4 id="chart-title">Downtime by reason</h4>
-            </div>
+            <div><p class="mono-label">VERIFIED OPERATIONS DATA</p><h3 id="chart-title">Downtime by reason</h3></div>
             <div class="chart-tabs" role="group" aria-label="Select chart breakdown">
-              <button class="active" type="button" data-view="reason">Reason</button>
-              <button type="button" data-view="product">Product</button>
-              <button type="button" data-view="shift">Shift</button>
+              <button class="active" type="button" data-view="reason">Reason</button><button type="button" data-view="product">Product</button><button type="button" data-view="shift">Shift</button>
             </div>
           </div>
-          <div class="chart-wrap"><canvas id="downtimeChart" aria-label="Downtime comparison chart" role="img"></canvas></div>
-          <div class="chart-note"><span>Source: anonymized manufacturing sample</span><strong>Minutes</strong></div>
-        </div>
-      </article>
+          <div class="chart-wrap"><canvas id="downtimeChart" aria-label="Manufacturing downtime comparison" role="img"></canvas></div>
+          <div class="data-footer"><span>61 validated events · anonymized public sample</span><strong>1,388 min</strong></div>
+        </article>
 
-      <div class="project-grid">
-        <article class="project-card">
-          <div class="card-number">01 / AI SYSTEMS</div>
-          <h3>AURIX</h3>
-          <p>A Windows voice assistant engineered as a behavior-evaluation lab: local-first routing, explicit specifications, regression tests, model judging, and documented failure analysis.</p>
-          <ul class="tag-list"><li>Python</li><li>LLM evaluation</li><li>Voice I/O</li><li>Testing</li></ul>
-          <a class="text-link" href="https://github.com/jprakash120/aurix" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a>
+        <article class="bento-card case-study-card reveal">
+          <div class="card-topline"><span class="repo-visibility">Case study</span><span class="card-index">02</span></div>
+          <p class="mono-label">MANUFACTURING INTELLIGENCE</p><h3>Downtime Explanation Copilot</h3>
+          <p>Source-verified KPIs, interactive filters, deterministic natural-language answers, anonymization, and six regression checks.</p>
+          <div class="mini-metrics"><span><strong>35</strong>batches</span><span><strong>55.9%</strong>operator-attributed</span></div>
+          <a class="card-link" href="https://github.com/jprakash120/Assignment_LookAndFeel/tree/master/projects/manufacturing-downtime-copilot" target="_blank" rel="noreferrer">Read the case study <span>↗</span></a>
         </article>
-        <article class="project-card">
-          <div class="card-number">02 / HEALTHCARE BI</div>
-          <h3>US Hospital Quality Analytics</h3>
-          <p>Power Query and Power BI analysis of public CMS hospital records, with rating quality checks, state-level comparisons, ownership segmentation, and drill-through detail.</p>
-          <ul class="tag-list"><li>Power BI</li><li>Power Query</li><li>DAX</li><li>CMS data</li></ul>
-          <span class="text-link muted">Case study refinement in progress</span>
-        </article>
-        <article class="project-card">
-          <div class="card-number">03 / DATA ENGINEERING</div>
-          <h3>Operations Data Automation</h3>
-          <p>Read-only API extraction, reconciliation, and refresh workflows connecting ERP records to auditable Excel and Power BI reporting for daily operational decisions.</p>
-          <ul class="tag-list"><li>Python</li><li>REST APIs</li><li>SQL</li><li>Power BI</li></ul>
-          <span class="text-link muted">Architecture shown; proprietary data withheld</span>
+
+        <article class="bento-card healthcare-card reveal">
+          <div class="card-topline"><span class="repo-visibility">Analytics</span><span class="card-index">03</span></div>
+          <div class="health-viz" aria-hidden="true"><div class="health-ring"><span>CMS</span></div><div class="health-bars"><i style="--bar:42%"></i><i style="--bar:66%"></i><i style="--bar:51%"></i><i style="--bar:82%"></i><i style="--bar:61%"></i></div></div>
+          <p class="mono-label">HEALTHCARE BI</p><h3>US Hospital Quality Analytics</h3>
+          <p>Power Query and Power BI analysis of public CMS records with rating checks, state comparisons, segmentation, and drill-through detail.</p>
+          <div class="repo-stats"><span><i class="language-dot powerbi"></i>Power BI</span><span>DAX</span><span>CMS data</span></div>
         </article>
       </div>
     </section>
 
-    <section class="section split-section" id="experience">
-      <div class="section-heading compact">
-        <div>
-          <p class="eyebrow">EXPERIENCE</p>
-          <h2>From pipelines to operating decisions</h2>
-        </div>
+    <section class="section-shell section-block" id="experience">
+      <div class="section-heading reveal">
+        <div><p class="mono-label">02 / EXPERIENCE LOG</p><h2>Building across the data lifecycle</h2></div>
+        <p>Roles are shown without organization names. The work spans manufacturing operations, public health, and global technology services.</p>
       </div>
-      <div class="timeline">
-        <article>
-          <div class="timeline-date">2026 — PRESENT</div>
-          <div><h3>Data Scientist</h3><p class="company">Manufacturing operations · Central Florida</p><p>Building manufacturing analytics, ERP data automation, reconciliation controls, and executive dashboards that connect production activity to operational action.</p></div>
-        </article>
-        <article>
-          <div class="timeline-date">2025 — 2026</div>
-          <div><h3>Government Operations Consultant II</h3><p class="company">State public health agency · Florida</p><p>Delivered Power Platform and GIS solutions for public-health workflows using Power Apps, Power Automate, SharePoint, Power BI, Dataverse, and ArcGIS.</p></div>
-        </article>
-        <article>
-          <div class="timeline-date">2020 — 2023</div>
-          <div><h3>Senior Data Engineer</h3><p class="company">Global technology services · India</p><p>Engineered Azure data pipelines and analytics solutions across ADF, SQL, Synapse, Snowflake, Python, Linux, and Power BI for high-volume enterprise data.</p></div>
-        </article>
+      <div class="experience-grid">
+        <aside class="experience-nav reveal" aria-label="Experience summary">
+          <span class="active">2026—NOW</span><span>2025—2026</span><span>2020—2023</span>
+          <div class="experience-signal"><i></i><p>Current trajectory</p><strong>Data products → Applied AI</strong></div>
+        </aside>
+        <div class="experience-list">
+          <article class="experience-item reveal"><div class="experience-time"><span>2026—PRESENT</span><i></i></div><div><h3>Data Scientist</h3><p class="role-context">Manufacturing operations · Central Florida</p><p>Building production analytics, ERP data automation, reconciliation controls, and decision dashboards that connect operational activity to action.</p><ul><li>Python & API automation</li><li>Operational BI</li><li>Data quality</li></ul></div></article>
+          <article class="experience-item reveal"><div class="experience-time"><span>2025—2026</span><i></i></div><div><h3>Government Operations Consultant II</h3><p class="role-context">State public health agency · Florida</p><p>Delivered Power Platform and GIS solutions for public-health workflows using Power Apps, Power Automate, SharePoint, Power BI, Dataverse, and ArcGIS.</p><ul><li>Power Platform</li><li>GIS</li><li>Government analytics</li></ul></div></article>
+          <article class="experience-item reveal"><div class="experience-time"><span>2020—2023</span><i></i></div><div><h3>Senior Data Engineer</h3><p class="role-context">Global technology services · India</p><p>Engineered Azure pipelines and analytics solutions across ADF, SQL, Synapse, Snowflake, Python, Linux, and Power BI for high-volume enterprise data.</p><ul><li>Azure data engineering</li><li>2 TB+ data</li><li>Enterprise BI</li></ul></div></article>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="skills">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">CAPABILITIES</p>
-          <h2>A practical data stack</h2>
-        </div>
-        <p>Tools are grouped by how I use them to deliver a working system.</p>
+    <section class="section-shell section-block" id="stack">
+      <div class="section-heading reveal">
+        <div><p class="mono-label">03 / TOOLCHAIN</p><h2>One stack, four delivery layers</h2></div>
+        <p>Technology is grouped by the job it performs—not displayed as a wall of keywords.</p>
       </div>
-      <div class="capability-grid">
-        <article><span>01</span><h3>Data engineering</h3><p>Python, SQL, Azure Data Factory, Synapse, Snowflake, SAP B1/HANA, REST APIs, data modeling, quality checks</p></article>
-        <article><span>02</span><h3>Analytics & BI</h3><p>Power BI, DAX, Power Query, Looker Studio, Excel, KPI frameworks, reconciliation, executive storytelling</p></article>
-        <article><span>03</span><h3>Applied AI</h3><p>LLM orchestration, RAG, tool routing, model evaluation, prompt design, fuzzy matching, Streamlit</p></article>
-        <article><span>04</span><h3>Business systems</h3><p>Power Apps, Power Automate, SharePoint, Dataverse, ArcGIS Pro/Online, requirements translation</p></article>
+      <div class="stack-grid">
+        <article class="stack-card reveal"><span class="stack-number">01</span><div class="stack-icon">{ }</div><h3>Engineer</h3><p>Python · SQL · Azure Data Factory · Synapse · Snowflake · SAP B1/HANA · REST APIs</p><small>SOURCE → TRUSTED DATA</small></article>
+        <article class="stack-card reveal"><span class="stack-number">02</span><div class="stack-icon">▥</div><h3>Analyze</h3><p>Power BI · DAX · Power Query · Excel · Looker Studio · KPI frameworks · reconciliation</p><small>DATA → DECISION</small></article>
+        <article class="stack-card reveal"><span class="stack-number">03</span><div class="stack-icon">✦</div><h3>Intelligize</h3><p>RAG · LLM routing · model evaluation · agents · fuzzy matching · Streamlit</p><small>DECISION → ASSISTANCE</small></article>
+        <article class="stack-card reveal"><span class="stack-number">04</span><div class="stack-icon">⌘</div><h3>Operationalize</h3><p>Power Apps · Power Automate · SharePoint · Dataverse · ArcGIS · requirements translation</p><small>ASSISTANCE → ACTION</small></article>
       </div>
     </section>
 
-    <section class="contact-section">
-      <p class="eyebrow">LET’S BUILD SOMETHING USEFUL</p>
-      <h2>Looking for a data scientist who can own the path from messy data to a trusted decision?</h2>
-      <div class="hero-actions">
-        <a class="button primary" href="https://www.linkedin.com/in/jayaprakash-makkena-3160a3174" target="_blank" rel="noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
-        <a class="button secondary" href="https://github.com/jprakash120" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-      </div>
+    <section class="section-shell contact-section reveal" id="contact">
+      <div class="contact-orbit" aria-hidden="true"><i></i><i></i><span>JM</span></div>
+      <p class="mono-label">AVAILABLE FOR THE RIGHT MISSION</p>
+      <h2>Need someone who can own the path from messy data to a trusted decision?</h2>
+      <p>Let’s talk about data science, analytics engineering, BI, or applied AI work.</p>
+      <div class="hero-actions"><a class="button button-primary" href="https://www.linkedin.com/in/jayaprakash-makkena-3160a3174" target="_blank" rel="noreferrer">Connect on LinkedIn <span>↗</span></a><a class="button button-ghost" href="https://github.com/jprakash120" target="_blank" rel="noreferrer">Follow on GitHub <span>↗</span></a></div>
     </section>
   </main>
 
-  <footer>
-    <span>© <span id="year"></span> Jayaprakash Makkena</span>
-    <span>Designed around evidence, clarity, and usable outcomes.</span>
+  <footer class="site-footer section-shell">
+    <div><span class="brand-glyph small">JM</span><p>© <span id="year"></span> Jayaprakash Makkena</p></div><p>Built like a data product: clear, tested, and privacy-aware.</p><a href="#top">Back to top ↑</a>
   </footer>
+
+  <dialog class="command-palette" id="commandPalette" aria-labelledby="command-title">
+    <div class="command-head"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg><label class="sr-only" for="commandSearch" id="command-title">Navigate portfolio</label><input id="commandSearch" type="search" placeholder="Search pages and projects…" autocomplete="off"><kbd>ESC</kbd></div>
+    <div class="command-list" role="listbox" aria-label="Portfolio destinations">
+      <a href="#projects" data-command-item><span>⌘</span><div><strong>Featured builds</strong><small>Projects and verified analytics</small></div><kbd>↵</kbd></a>
+      <a href="https://github.com/jprakash120/aurix" target="_blank" rel="noreferrer" data-command-item><span>AI</span><div><strong>AURIX repository</strong><small>Voice assistant and evaluation lab</small></div><kbd>↗</kbd></a>
+      <a href="#experience" data-command-item><span>↻</span><div><strong>Experience log</strong><small>Roles and impact areas</small></div><kbd>↵</kbd></a>
+      <a href="#stack" data-command-item><span>{ }</span><div><strong>Technical stack</strong><small>Tools grouped by delivery layer</small></div><kbd>↵</kbd></a>
+      <a href="https://github.com/jprakash120" target="_blank" rel="noreferrer" data-command-item><span>GH</span><div><strong>GitHub profile</strong><small>All public repositories</small></div><kbd>↗</kbd></a>
+      <a href="#contact" data-command-item><span>→</span><div><strong>Connect</strong><small>LinkedIn and GitHub</small></div><kbd>↵</kbd></a>
+      <p class="command-empty" hidden>No matching destination.</p>
+    </div>
+    <div class="command-foot"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>↵</kbd> open</span><span><kbd>esc</kbd> close</span></div>
+  </dialog>
 </body>
 </html>

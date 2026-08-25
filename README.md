@@ -5,6 +5,7 @@ Career portfolio for a data scientist and data engineer focused on reliable pipe
 ## What changed
 
 - Replaced the original class sales website with a responsive career portfolio.
+- Added a GitHub-inspired futuristic interface with dark/light themes, bento project cards, a command palette, and accessible motion.
 - Added an interactive, source-verified manufacturing downtime visualization.
 - Featured AURIX as a behavior-tested AI assistant rather than a basic API demo.
 - Reframed experience and skills around outcomes, architecture, and evidence.
